@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标题</title>
+    <link rel="stylesheet" href="./res/bulma/bulma.min.css">
+    <link rel="stylesheet" href="./res/font/iconfont.css">
+    <link rel="stylesheet" href="./res/css/base.css">
+    <script src="./res/jquery/jquery.min.js"></script>
+    <script src="./res/js/main.js"></script>
+</head>
+<body>
+
+    <nav id="navbar" class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a id="logo" href="/" class="navbar-item is-size-6-touch">Fucking Manga</a>
+                <div class="navbar-burger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="/" class="navbar-item is-hidden-touch is-active">
+                        <span class="iconfont icon-home iconfont-large"></span>
+                        首页
+                    </a>
+                    <a href="/hot" class="navbar-item is-size-7-touch">
+                        <span class="iconfont icon-hot iconfont-large"></span>
+                        热门
+                    </a>
+                    <a href="/search" class="navbar-item is-size-7-touch">
+                        <span class="iconfont icon-layered iconfont-big"></span>
+                        查找
+                    </a>
+                    <a href="/uc/feed" class="navbar-item is-size-7-touch">
+                        <span class="iconfont icon-favoriteslist iconfont-large"></span>
+                        订阅
+                    </a> 
+                    <a href="/uc" class="navbar-item is-size-7-touch">
+                        <span class="iconfont icon-nickname iconfont-large"></span>
+                        我的
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <form id="navSearchBar" action="/search" method="POST">
+                            <div class="field has-addons">
+                                <div class="control is-expanded">
+                                    <input class="input is-size-7-touch" type="search" name="keyword" placeholder="快速搜索" alt="搜索">
+                                </div>
+                                <div class="control">
+                                    <button type="submit" class="button is-size-7-touch">
+                                        <span class="iconfont icon-search"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+
+</body>
+</html>
