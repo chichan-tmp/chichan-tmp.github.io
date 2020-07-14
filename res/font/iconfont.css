@@ -26,6 +26,10 @@
   font-size: 1.6em;
 }
 
+.icon-loading:before {
+  content: "\e668";
+}
+
 .icon-shoucang:before {
   content: "\e8b9";
 }

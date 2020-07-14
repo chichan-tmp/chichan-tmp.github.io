@@ -1,0 +1,78 @@
+#viewer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#viewer>figure>img {
+    z-index: 9;
+}
+
+#viewer>figure>div.loading-error {
+    background-color: rgba(230, 230, 230, 1);
+    z-index: 100;
+    font-size: 8rem;
+    cursor: pointer;
+    box-shadow:inset 0px 0px 3px 2px rgb(236, 20, 20);
+    visibility: hidden;
+}
+#viewer>figure>.loading,#viewer>figure>.loading-error {
+    background-color: rgba(100, 100, 100, 0.6);
+    color: #3d3d3d;
+    z-index: 99;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#viewer>figure>.loading>.iconfont {
+    animation:turn 1.8s linear infinite;
+}
+@keyframes turn {
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(90deg);}
+    50%{transform:rotate(180deg);}
+    75%{transform:rotate(270deg);}
+    100%{transform:rotate(360deg);}
+}
+#toolbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 888;
+    padding: 1.5rem 20px;
+}
+#toolbar>.status {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+#toolbar>input {
+    display: block;
+    width: 100%;
+}
+
+#status {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+#status>a {
+    position: relative;
+    left: 2em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}

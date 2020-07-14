@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="./res/bulma/bulma.min.css">
     <link rel="stylesheet" href="./res/font/iconfont.css">
     <link rel="stylesheet" href="./res/css/base.css">
+    <style>
+        #content {
+            padding: 20px 30px;
+        }
+        #content ul>li{
+            list-style-type: disc;
+            margin: 10px;
+        }
+    </style>
     <script src="./res/jquery/jquery.min.js"></script>
     <script src="./res/js/main.js"></script>
 </head>
@@ -65,6 +74,18 @@
     </div>
 
 </nav>
+
+<section id="content" class="container">
+    <h1 class="title is-2">前端测试</h1>
+    <p>
+        <h2 class="title is-3">阅读器页面<a href="./viewer.html">./viewer.html</a></h2>
+        <ul>
+            <li>左下角进度显示</li>
+            <li>进度跳转工具栏</li>
+            <li>图片懒加载，Chrome浏览器打开F12开发者工具，在Network选项卡里将Online下拉菜单选为Slow 3G可看到效果</li>
+        </ul>
+    </p>
+</section>
 
 </body>
 </html>

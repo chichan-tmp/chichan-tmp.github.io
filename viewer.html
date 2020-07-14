@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主页</title>
+    <title>浏览漫画</title>
     <link rel="stylesheet" href="./res/bulma/bulma.min.css">
     <link rel="stylesheet" href="./res/font/iconfont.css">
     <link rel="stylesheet" href="./res/css/base.css">
+    <link rel="stylesheet" href="./res/css/viewer.css">
     <script src="./res/jquery/jquery.min.js"></script>
     <script src="./res/js/main.js"></script>
+    <script src="./res/js/viewer.js"></script>
 </head>
 <body>
-
-<nav id="navbar" class="navbar is-light is-light is-fixed-top" role="navigation" aria-label="main navigation">
+<nav id="navbar" class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
             <a id="logo" href="/" class="navbar-item is-size-6-touch">Fucking Manga</a>
@@ -24,7 +25,7 @@
         </div>
         <div id="navMenu" class="navbar-menu">
             <div class="navbar-start">
-                <a href="/" class="navbar-item is-hidden-touch is-active">
+                <a href="/" class="navbar-item is-hidden-touch">
                     <span class="iconfont icon-home iconfont-large"></span>
                     首页
                 </a>
@@ -63,8 +64,76 @@
             </div>
         </div>
     </div>
-
 </nav>
+
+<section id="viewer">
+    <figure class="image is-square">
+        <img data-src="./res/m126466/001.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/002.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/003.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/004.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/005.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/006.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/007.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/008.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/009.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/010.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/011.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/012.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/013.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/014.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/015.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/016.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/017.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/018.jpg">
+    </figure>
+    <figure class="image is-square">
+        <img data-src="./res/m126466/019.jpg">
+    </figure>
+</section>
+
+<div id="toolbar">
+    <div class="status">*/*</div>
+    <input type="range" name="rate" min="1"/>
+</div>
+
+<div id="status">
+    <a class="button is-size-7-touch">*/*</a>
+</div>
 
 </body>
 </html>
