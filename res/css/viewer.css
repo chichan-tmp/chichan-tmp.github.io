@@ -69,7 +69,7 @@
     height: 4rem;
     display: flex;
     align-items: center;
-    z-index: 888;
+    z-index: 887;
 }
 #status>a {
     position: relative;
